@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.box {
+  width: 500px;
+  height: 600px;
+  background-color: rgb(185, 185, 185);
+  border-radius: 12px;
+  padding: 20px;
+}
+.box p {
+  font-weight: 500;
+  font-size: 20pt;
+  color: white;
+  margin-top: 20px;
+}
+.box input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 12pt;
+}
+.box button {
+  background-color: rgb(109, 84, 253);
+  outline-color: aliceblue;
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  width: 150px;
+  height: 50px;
+  margin-top: 14px;
+  color: aliceblue;
+  font-size: 20pt;
+
+  cursor: pointer;
+}
+/* QR Output Box (imgbox) */
+.output {
+  margin-top: 20px;
+  padding: 20px;
+  /* background: #ffffff; */
+  /* border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 180px; /* keeps the box visible before QR loads */
+  display: none;
+}
+
+/* QR Image */
+#qrimage {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
